@@ -1,0 +1,10 @@
+name: First Simple Workflow from Udemy
+on: workflow_dispatch # trigger we want
+jobs:
+  first_job: # can be any name
+    runs-on: ubuntu-latest
+    steps:
+      - name: print greeting
+        run: echo "Hello world"
+      - name: exit
+        run: echo "Done"
